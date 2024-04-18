@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>变形及动画</title>
+    <style>
+      body {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .flexbox {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px green solid;
+        border-radius: 4px;
+        text-align: center;
+        line-height: 100px;
+      }
+      .box0:hover {
+        background-color: #f18787;
+        transition-duration: 0.4s;
+        transform: rotate(20deg);
+        transition-timing-function: ease-in;
+      }
+      .box1 {
+        transform: scale(1.5);
+        margin-left: 100px;
+      }
+      .box2 {
+        transform: rotate(20deg);
+        margin-left: 100px;
+      }
+      .box3 {
+        transform: translate(100px, 20%);
+      }
+      .box4 {
+        transform: translate(200px, 20%) skew(15deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>变形及动画</h1>
+    <div class="flexbox">
+      <div class="box box0">box0</div>
+      <div class="box box1">box1</div>
+      <div class="box box2">box2</div>
+      <div class="box box3">box3</div>
+      <div class="box box4">box4</div>
+    </div>
+    <div>
+      <img src="assets\notes\note.excalidraw.svg" alt="" width="80%" />
+    </div>
+  </body>
+</html>
