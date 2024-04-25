@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript 基础知识学习</title>
+  </head>
+  <body>
+    <script>
+      alert("hello World!");
+
+      let message = "你好！新闻学专业的同学。";
+      //   alert(message);
+      const myBirthday = "18.04.1982";
+      //   myBirthday = "xxx";
+      console.log(message, myBirthday);
+      let age = 10;
+      let stuName = "小明";
+      console.log(age, stuName);
+
+      let name = "John";
+      // 嵌入一个变量
+      console.log(`Hello, ${name}!`); // Hello, John!
+      console.log("Hello, " + name + "!");
+      let isStu = true;
+      console.log(isStu);
+      console.log(typeof isStu, typeof age, typeof name);
+
+      console.log(1 == "1", 1 === "1");
+      today = "星期四";
+      //   分支
+      //   if (today == "星期四") {
+      //     alert("乖乖上课去吧！");
+      //   } else {
+      //     alert("躺着。");
+      //   }
+      //   if (today == "星期四") {
+      //     alert("乖乖上课去吧！");
+      //   } else if (today == "星期三") {
+      //     alert("躺着。");
+      //   }
+      for (let i = 0; i < 4; i = i + 2) {
+        console.log(i);
+      }
+      let i = 3;
+      while (i) {
+        // 当 i 变成 0 时，条件为假，循环终止
+        console.log(i);
+        i--;
+      }
+    </script>
+  </body>
+</html>
